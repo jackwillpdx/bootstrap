@@ -49,10 +49,32 @@ img {
 .box4 {
     background-color: aquamarine;
 }
+
 .flexbox {
     display: flex;
     flex-flow: row wrap;
     flex-direction: row;
     width: 100vw;
     justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .column {
+        width: 300px;
+        float: left;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+    body {
+        background-color: rgb(204, 107, 72);
+        color: darkslateblue;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 300px) {
+    body {
+        background-color: rgb(173, 158, 152);
+    }
 }
